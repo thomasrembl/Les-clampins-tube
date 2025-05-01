@@ -11,7 +11,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0, 0%, 5.9%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -38,7 +38,7 @@
     --radius: 0.5rem;
   }
   .dark {
-    --background: 0 0% 3.9%;
+    --background: #0f0f0f;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -71,5 +71,36 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.salut {
+  max-width: 300px !important;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+.cote {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+* {
+  -ms-overflow-style: none; /* Pour IE et Edge */
+  scrollbar-width: none; /* Pour Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Masquer la scrollbar pour Chrome, Safari et Opera */
+}
+
+@media (max-width: 820px) {
+  .cote {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
