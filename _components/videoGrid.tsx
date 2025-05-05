@@ -31,7 +31,7 @@ export default function VideoGrid({ activeFilter }: VideoGridProps) {
             `${process.env.NEXT_PUBLIC_API_URL}/getAllVideos`
           );
           const data: VideoResponse = await res.json();
-          console.log("data", data.urlList);
+
           setVideos([
             {
               urlList: Array.isArray(data.urlList) ? data.urlList : [],
@@ -49,7 +49,7 @@ export default function VideoGrid({ activeFilter }: VideoGridProps) {
             }
           );
           const data: VideoResponse = await res.json();
-          console.log("data", data.urlList);
+
           setVideos([
             {
               urlList: Array.isArray(data.urlList) ? data.urlList : [],
@@ -69,7 +69,7 @@ export default function VideoGrid({ activeFilter }: VideoGridProps) {
       ? video.urlList.map(({ url }) => ({ url }))
       : []
   );
-  console.log("videos", videos);
+
   return (
     <div className="flex-grid text-white">
       {urlList.length > 0 ? (
