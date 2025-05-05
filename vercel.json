@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [{ "type": "host", "value": "www.clampins.fr" }],
+        "destination": "https://clampins.fr/$1",
+        "permanent": true
+      }
+    ]
+  }
