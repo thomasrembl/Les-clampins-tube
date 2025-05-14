@@ -89,6 +89,11 @@
   padding-left: 100px;
   padding-right: 100px;
 }
+
+.deg {
+  transform: rotate(90deg);
+}
+
 * {
   -ms-overflow-style: none; /* Pour IE et Edge */
   scrollbar-width: none; /* Pour Firefox */

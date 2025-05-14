@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import VideoGrid from "@/_components/videoGrid";
+import Link from "next/link";
 
 export default function Home() {
   type Item = {
@@ -39,13 +40,15 @@ export default function Home() {
       <div className="flex min-h-screen min-w-screen flex-col pt-[20px] gap-8 cote">
         <header className="flex w-full justify-between">
           <div className="h-[40px] w-[120px]">
-            <Image
-              src="/header.png"
-              alt="Next.js Logo"
-              width={180}
-              height={37}
-              priority
-            />
+            <Link href="/421">
+              <Image
+                src="/header.png"
+                alt="Next.js Logo"
+                width={180}
+                height={37}
+                priority
+              />
+            </Link>
           </div>
           <UserButton />
         </header>
